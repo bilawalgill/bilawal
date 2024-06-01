@@ -1,0 +1,85 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: black;
+  }
+  
+  .navbar {
+    background-color: lightcoral;
+    padding: 10px 20px;
+  }
+  
+  .footer {
+    background-color: lightcoral;
+    padding: 10px 20px;
+    margin-top: auto;
+  }
+  
+  .card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    margin-top: 20vh;
+  }
+  
+  .card {
+    background-color: lightcoral;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    height: 28vh;
+    width: 35vw;
+  }
+  
+  .card h2 {
+    margin-top: 0;
+  }
+  
+  .card p {
+    margin: 10px 0;
+  }
+  
+  .card button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    color: lightcoral;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .card button:hover {
+    background-color: darkred;
+  }
+  
+  .side-image {
+    position: absolute;
+    height: 140px; /* Adjust as needed */
+  }
+  
+  .left-image {
+    left: 10px; /* Adjust as needed */
+  }
+  
+  .right-image {
+    right: 10px; /* Adjust as needed */
+  }
+  @media (max-width:940px) {
+    .side-image {
+      display: none;
+      }
+  }
+  @media (max-width:792px) {
+    .card{
+      width: 40vw;
+    }
+  }
